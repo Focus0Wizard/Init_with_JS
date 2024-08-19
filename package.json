@@ -2,6 +2,7 @@
   "name": "parcel-jest-base",
   "version": "1.0.0",
   "description": "idk",
+  "default": "saludador.html",
   "scripts": {
     "start": "parcel saludador.html",
     "build": "parcel build saludador.html"
