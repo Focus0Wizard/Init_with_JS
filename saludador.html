@@ -3,16 +3,17 @@
     <body>
         <h1> Bot de Asistencia Personalizada</h1>
         <form id="form-saludator">
+            <label for="User-name">Ingrese su nombre</label>
             <input type="text" id="User-name" required/>
-
-            <label for="genero">Genero</label>
+            <label for="gender">Genero</label>
             <select name="gender" id="gender" required>
                 <option value="male">Masculino</option>
                 <option value="female">Femenino</option>
                 <option value="none">Prefiero no decirlo</option>
             </select><br><br>
             
-            <input type="submit" value="Saludar" id="hi-button">
+            <input type="submit" value="Saludar" id="saludo-button">
+            <input type="submit" value="Hello There" id="hail-button">
         </form>
 
         <div id="resultado-div"></div>

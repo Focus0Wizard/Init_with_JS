@@ -3,11 +3,28 @@ const name = document.querySelector("#User-name");
 const gender = document.querySelector("#gender");
 const div = document.querySelector("#resultado-div");
 
-form.addEventListener("submit", (event) => {
+const buttons = {
+    spanish: document.querySelector("#saludo-button"),
+    english: document.querySelector("#hail-button")
+};
+
+
+Object.keys(buttons).forEach((key) => {
+    buttons[key].addEventListener("click", (event) => {
     event.preventDefault();
+
     let Hi  = "Hola"
     const nombre = name.value
     const genero = gender.value
+
+    switch (key) {
+        case "spanish":
+            Hi = "Hola"
+        break;
+        case "english":
+            Hi = "Hello"
+        break;
+    }
 
     if(genero === "male"){
         Hi = Hi + " Sr. "
@@ -19,4 +36,5 @@ form.addEventListener("submit", (event) => {
 
     const Saludo = Hi + " " + nombre
     div.innerHTML = "<p>" + Saludo  + "</p>";
+    });
 });
