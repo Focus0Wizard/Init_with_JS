@@ -2,17 +2,12 @@
   "name": "parcel-jest-base",
   "version": "1.0.0",
   "description": "",
-  "default": "index.html",
   "scripts": {
     "start": "parcel saludador.html",
-    "build": "parcel build saludador.html",
-    "test": "jest --watch",
-    "test-once": "jest --verbose --coverage",
-    "cypress": "cypress open",
-    "cypress-run": "cypress run"
+    "build": "parcel build saludador.html"
   },
-  "author": "Israel Antezana R.",
-  "license": "ISC",
+  "author": "Jhonn Ramirez",
+  "license": "",
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
