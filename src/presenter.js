@@ -40,3 +40,4 @@ Object.keys(buttons).forEach((key) => {
     div.innerHTML = "<p>" + resultado + "</p>";
   });
 });
+

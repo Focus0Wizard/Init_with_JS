@@ -38,3 +38,28 @@ Object.keys(buttons).forEach((key) => {
     div.innerHTML = "<p>" + Saludo  + "</p>";
     });
 });
+
+function saludar(nombre, genero, idioma){
+
+    let Hi  = " "
+
+    switch (idioma) {
+        case "spanish":
+            Hi = "Hola"
+        break;
+        case "english":
+            Hi = "Hello"
+        break;
+    }
+
+    if(genero === "male"){
+        Hi = Hi + " Sr. "
+    }else if(genero === "female"){
+        Hi = Hi + " Sra. "
+    }else{
+        Hi = Hi + " "
+    }
+
+    const Saludo = Hi + " " + nombre
+    return Saludo
+}
