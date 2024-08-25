@@ -9,8 +9,18 @@ function generarFizzBuzz(number) {
         return "Buzz"
     }
     
-    return number+""
+    return number.toString()
 }
 
-export default generarFizzBuzz
+function recorrer(lenght) {
+    let cad = ""
+    for(let i = 1; i <= lenght; i++){
+        cad += generarFizzBuzz(i)
+        
+    }
+    return cad
+}
+
+export {generarFizzBuzz, recorrer }
+
 

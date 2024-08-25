@@ -4,8 +4,8 @@
   "description": "idk",
   "default": "saludador.html",
   "scripts": {
-    "start": "parcel saludador.html",
-    "build": "parcel build saludador.html",
+    "start": "parcel fizzbuzz.html",
+    "build": "parcel build fizzbuzz.html",
     "test": "jest --watch",
     "test-once": "jest --verbose --coverage",
     "cypress": "cypress open",

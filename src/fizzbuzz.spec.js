@@ -1,4 +1,4 @@
-import generarFizzBuzz from "./fizzBuzz";
+import {generarFizzBuzz, recorrer} from "./fizzBuzz";
 
 describe("FizzBuzz", () => {
     it("generar el mismo numero si no sigue ninguna regla", () => {
@@ -24,9 +24,13 @@ describe("FizzBuzz", () => {
     it("generar el Buzz para los multiplos de 5", () => {
         expect(generarFizzBuzz(10)).toEqual("Buzz");
     });
-    
+
     it("generar el FizzBuzz para multiplos de 3 & 5", () => {
         expect(generarFizzBuzz(15)).toEqual("FizzBuzz");
+    });
+
+    it("Recorrer el numero hasta 4", () => {
+        expect(recorrer(4)).toEqual("1, 2, Fizz, 4");
     });
     
 });
